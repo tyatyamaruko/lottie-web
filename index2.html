@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <style>
+        #lottie-animation {
+            background-color: #fff;
+            width: 35%;
+            height: 35%;
+            display: block;
+            overflow: hidden;
+            transform: translate3d(0, 0, 0);
+            margin: 0 auto;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="lottie-animation"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.9/lottie.min.js"></script>
+    <script>
+        
+        lottie.loadAnimation({
+            container: document.getElementById('lottie-animation'), // アニメーションを追加する要素
+            renderer: 'svg', // レンダリングのタイプ
+            loop: true, // アニメーションをループさせるかどうか
+            autoplay: true, // アニメーションを自動再生するかどうか
+            path: './monster-ballt.json' // アニメーションのjsonファイルのパス
+        });
+    </script>
+</body>
+
+</html>
